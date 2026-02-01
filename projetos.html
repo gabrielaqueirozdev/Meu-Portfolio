@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos - Gabriela Lemes</title>
+    <link rel="stylesheet" href="style_projetos.css">
+</head>
+<body>
+    <header>
+    <h1>Aqui está alguns dos meus projetos:</h1>
+
+    <h3>SuperDocs</h3>
+<p>
+Sistema de gerenciamento de registros com funcionalidades de cadastro, listagem e atualização de dados.
+</p>
+<p>
+Tecnologias: Java • Interface gráfica • CRUD
+</p>
+
+    <div class="carousel">
+        <div class="carousel-container">
+            <img src="Imagens dos projetos/Img_02.PNG" alt="Project screenshot" class="carousel-slide">
+            <img src="Imagens dos projetos/Img_03.PNG" alt="Project screenshot" class="carousel-slide">
+            <img src="Imagens dos projetos/Img_04.PNG" alt="Project screenshot" class="carousel-slide">
+            <img src="Imagens dos projetos/Img_05.PNG" alt="Project screenshot" class="carousel-slide">
+        </div>
+        <button class="carousel-prev">❮</button>
+        <button class="carousel-next">❯</button>
+        <p></p>
+        <a href="https://github.com/gabrielaqueirozdev" target="_blank" class="link-redes-sociais">GitHub</a>
+        
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const totalSlides = slides.length;
+
+        function showSlide(n) {
+            slides.forEach(slide => slide.style.display = 'none');
+            slides[n].style.display = 'block';
+        }
+
+        document.querySelector('.carousel-next').addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        });
+
+        document.querySelector('.carousel-prev').addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            showSlide(currentSlide);
+        });
+
+        showSlide(0);
+    </script>
+
+
+    </header>
+</body>
+</html>

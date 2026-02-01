@@ -1,0 +1,45 @@
+:root {
+  --bg-main: #EAF4F1;
+  --primary: #2F7D6D;
+  --accent: #3FCF8E;
+  --text-main: #1F2933;
+  --text-secondary: #4B5563;
+  --white: #FFFFFF;
+}
+
+/* ========================
+   RESET BÁSICO
+======================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+  padding: 320px 200px;
+  background-color: var(--primary);
+  color: var(--white);
+  gap: 16px;
+}
+
+.link-redes-sociais {
+   text-decoration: none;
+  color: var(--white);
+  background-color: var(--accent);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s;
+  display: inline-block;
+}
+

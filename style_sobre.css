@@ -1,0 +1,39 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-size: 22px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+  padding: 40px 200px;
+  background-color: var(--primary);
+  color: var(--white);
+  gap: 16px;
+}
+
+a {
+    text-decoration: none;
+  color: var(--white);
+  background-color: var(--accent);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s;
+  display: inline-block;    
+}
+a:hover {
+    background-color: var(--primary);
+    color: var(--white);
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+}
+
+.sobre-img {
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
